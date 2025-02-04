@@ -1,0 +1,89 @@
+slice_name: Hability by Proficiency Level
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 8__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 29
+  x_axis: habilidade
+  x_axis_sort_asc: true
+  x_axis_sort_series: name
+  x_axis_sort_series_ascending: true
+  metrics:
+  - aggregate: COUNT_DISTINCT
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: funcionario_ID
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 44
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: BIGINT
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT_DISTINCT(funcionario_ID)
+    optionName: metric_rbji3t0gitf_nka0t6kjh2r
+    sqlExpression: null
+  groupby:
+  - proficiency_level
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: habilidade
+    operator: '!='
+    operatorId: NOT_EQUALS
+    comparator: Others
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_ac61z0ouleg_7qeblhean0m
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: horizontal
+  x_axis_title: ''
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  sort_series_type: name
+  sort_series_ascending: true
+  color_scheme: lyftColors
+  only_total: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelRotation: 0
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 3
+query_context: '{"datasource":{"id":8,"type":"table"},"force":false,"queries":[{"filters":[{"col":"habilidade","op":"!=","val":"Others"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"habilidade","label":"habilidade","expressionType":"SQL"},"proficiency_level"],"metrics":[{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"funcionario_ID","description":null,"expression":null,"filterable":true,"groupby":true,"id":44,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"BIGINT","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(funcionario_ID)","optionName":"metric_rbji3t0gitf_nka0t6kjh2r","sqlExpression":null}],"orderby":[[{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"funcionario_ID","description":null,"expression":null,"filterable":true,"groupby":true,"id":44,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"BIGINT","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(funcionario_ID)","optionName":"metric_rbji3t0gitf_nka0t6kjh2r","sqlExpression":null},false]],"annotation_layers":[],"row_limit":10000,"series_columns":["proficiency_level"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["habilidade"],"columns":["proficiency_level"],"aggregates":{"COUNT_DISTINCT(funcionario_ID)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"COUNT_DISTINCT(funcionario_ID)":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"8__table","viz_type":"echarts_timeseries_bar","slice_id":29,"x_axis":"habilidade","x_axis_sort_asc":true,"x_axis_sort_series":"name","x_axis_sort_series_ascending":true,"metrics":[{"aggregate":"COUNT_DISTINCT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"funcionario_ID","description":null,"expression":null,"filterable":true,"groupby":true,"id":44,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"BIGINT","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT_DISTINCT(funcionario_ID)","optionName":"metric_rbji3t0gitf_nka0t6kjh2r","sqlExpression":null}],"groupby":["proficiency_level"],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"habilidade","operator":"!=","operatorId":"NOT_EQUALS","comparator":"Others","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_ac61z0ouleg_7qeblhean0m"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"horizontal","x_axis_title":"","x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","sort_series_type":"name","sort_series_ascending":true,"color_scheme":"lyftColors","only_total":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelRotation":0,"y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"rich_tooltip":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[3],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: d56fa4b5-ad60-4593-bba7-afb7d66cc29a
+version: 1.0.0
+dataset_uuid: fef94080-3e87-4548-9b27-5d134699f743

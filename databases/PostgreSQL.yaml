@@ -1,0 +1,16 @@
+database_name: PostgreSQL
+sqlalchemy_uri: postgresql+psycopg2://maryne:XXXXXXXXXX@postegres-acaso:5432/database_final_acaso
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: true
+extra:
+  metadata_params: {}
+  engine_params: {}
+  metadata_cache_timeout: {}
+  schemas_allowed_for_file_upload: []
+uuid: 78404e71-39c2-4c0a-a85e-063d1b348815
+version: 1.0.0
