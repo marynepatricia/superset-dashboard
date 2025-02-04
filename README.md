@@ -1,3 +1,4 @@
+
 # **Dashboard RH - Projeto de Aprendizado com Superset**
 
 Este repositório contém a estrutura e uma imagem de um dashboard desenvolvido utilizando o Apache Superset. O projeto foi criado com o objetivo principal de aprender e explorar as funcionalidades do Superset, além de praticar o uso de ferramentas como Docker, Beekeeper, PostgreSQL e Postman para requisições de API.
@@ -17,3 +18,4 @@ O dashboard foi projetado para ser utilizado pelo setor de Recursos Humanos (RH)
 * Beekeeper: Ferramenta para gerenciamento e consulta de bancos de dados.
 
 * Postman: Utilizado para testar e realizar requisições de API.
+
